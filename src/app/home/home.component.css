@@ -1,0 +1,56 @@
+img {
+    max-width: 100%;
+}
+
+.thumb {
+    cursor: pointer;
+}
+
+.modal-title {
+    word-break: break-all;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #e22069;
+}
+
+p {
+    color: #eae5d6;
+}
+
+a {
+    color: #e22069;
+}
+
+.btn-primary {
+    background: #e22069;
+    border-color: #e22069;
+}
+
+.btn-primary:hover {
+    background: #c71759;
+    border-color: #c71759;
+}
+
+.btn-outline-primary {
+    color: #eae5d6;
+    border-color: #eae5d6;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background: #e22069;
+    border-color: #e22069;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-outline-primary.focus, .btn-outline-primary:focus {
+    box-shadow: none;
+}
+
+.preloader {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+body {
+    background: #23292c;
+}
+
+.modal-content {
+    background-color: #23292c;
+}
+
+.close {
+    color: #eae5d6;
+    text-shadow: none;
+}
+
+.modal-title {
+    color: #eae5d6;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
