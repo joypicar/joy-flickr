@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   lens: any;
   aperture: any;
   iso: any;
+  exposure: any;
   page: number;
   pages: number;
   isLoading: boolean = true;
@@ -73,6 +74,10 @@ export class HomeComponent implements OnInit {
         if (this.photoInfo.exif[i].label === 'ISO Speed'){
           this.iso = this.photoInfo.exif[i].raw._content;
           console.log(this.iso);
+        }
+        if (this.photoInfo.exif[i].label === 'Exposure'){
+          this.exposure = this.photoInfo.exif[i].raw._content;
+          console.log(this.exposure);
         }
       }       
     })

@@ -14,12 +14,15 @@
                     </button>
                 </div>
                 <div class="modal-body" *ngIf="photoInfo">  
-                    <img src="https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_b.jpg" class="rounded mb-2">  
-                    <br>            
-                    <p>Camera: {{ photoInfo.camera }} <br>
+                    <img src="https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_b.jpg" class="rounded mb-4">  
+                    <p class="mb-0">Camera: {{ photoInfo.camera }} <br>
                     Lens Model: {{ lens }} <br>
                     ISO Speed: {{ iso }} <br>
-                    Aperture: {{ aperture }}</p>
+                    Aperture: {{ aperture }} <br>
+                    Exposure: {{ exposure }} </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.flickr.com/photos/joysancute/{{item.id}}" target="_blank" class="btn btn-primary px-3">View in Flickr</a>
                 </div>
             </ng-template>
         </div>

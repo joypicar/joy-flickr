@@ -26,6 +26,7 @@ a {
 .btn-primary {
     background: #e22069;
     border-color: #e22069;
+    color: #fff;
 }
 
 .btn-primary:hover {
