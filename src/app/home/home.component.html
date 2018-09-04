@@ -7,19 +7,19 @@
             <img src="https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_n.jpg" class="thumb rounded" (click)="open(content, item.id)">
     
             <ng-template #content let-modal>
-                <div class="modal-header">
-                    <h4 class="modal-title" id="modal-basic-title" *ngIf="photoInfo">{{ item.title }}</h4>
-                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div class="modal-body" *ngIf="photoInfo">  
-                    <img src="https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_b.jpg" class="rounded mb-4">  
-                    <p class="mb-0">Camera: {{ photoInfo.camera }} <br>
-                    Lens Model: {{ lens }} <br>
-                    ISO Speed: {{ iso }} <br>
-                    Aperture: {{ aperture }} <br>
-                    Exposure: {{ exposure }} </p>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_b.jpg" class="rounded"> 
+                    <div class="p-3">
+                        <h4 class="modal-title mb-2" id="modal-basic-title" *ngIf="photoInfo">{{ item.title }}</h4> 
+                        <p class="mb-0">Camera: {{ photoInfo.camera }} <br>
+                        Lens Model: {{ lens }} <br>
+                        ISO Speed: {{ iso }} <br>
+                        Aperture: {{ aperture }} <br>
+                        Exposure: {{ exposure }} </p>
+                    </div>                    
                 </div>
                 <div class="modal-footer">
                     <a href="https://www.flickr.com/photos/joysancute/{{item.id}}" target="_blank" class="btn btn-primary px-3">View in Flickr</a>
